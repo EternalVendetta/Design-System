@@ -1,0 +1,235 @@
+/* Pattern
+    blue: #2BBBB9;
+    darkBlue: #050E10;
+    lightgrey: #EAEBEB;
+    darkGrey: 
+*/
+
+/* GENERAL */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, label, button {
+    font-family: 'Montserrat';
+    color: #92979B;
+}
+
+li, a {
+    font-family: 'Montserrat';
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #92979B;
+}
+
+.teal {
+    color: hsla(179, 63%, 45%, 1);
+    font-style: italic;
+}
+
+.icon-big {
+    width: 128px;
+    height: 128px;
+    margin-right: 1rem;
+}
+
+.icon-small {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+/* NAV */
+
+nav {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #050E10;
+}
+
+.informations, .sign-in {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+.informations {
+    width: 20%;
+}
+
+.register {
+    padding: .5rem;
+    border-radius: 3px;
+    background-color: hsla(179, 63%, 45%, 1);
+    color: #FFF;
+}
+
+.register:hover {
+    background-color: hsla(179, 63%, 45%, .75);
+    border-bottom: none;
+    color: #FFF;
+}
+
+/* HEADER */
+
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background: url('/resources/assets/images/main-background\ \(5\).jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: #92979B;
+}
+
+.about p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #92979B;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    background-color:  hsla(191, 52%, 4%, .6);
+    border-radius: 10px;
+}
+
+/* SERVICES */
+
+.services {
+    width: 100%;
+    height: auto;
+    /* TOP / RIGHT / BOTTOM / LEFT */
+    padding: 14rem 0 8rem 0;
+    background: linear-gradient(360deg, hsl(191, 52%, 4%), hsl(191, 52%, 12%));
+}
+
+.first-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.grid-container {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 60px 40px;
+}
+
+.box {
+    min-height: 200px;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #92979B;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* FORM */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 8rem 0;
+    background: linear-gradient(180deg, hsl(191, 52%, 4%), hsl(191, 52%, 12%))
+}
+
+.form-container {
+    width: 50%;
+    height: auto;
+    padding: 3rem 0;
+    border-radius: 10px;
+    background-color: hsla(179, 63%, 45%, .75);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INPUTS */
+
+input {
+    font-size: 1.3rem;
+    min-width: 50%;
+    padding: .8rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin: 2rem 0;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+label {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsla(191, 52%, 4%, 1);
+}
+
+button {
+    width: 25%;
+    height: 50px;
+    margin: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: hsla(191, 52%, 4%, 1) !important;
+}
+
+
+
+
+
+
+

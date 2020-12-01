@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="/resources/css/animations.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Main Title -->
+    <title>Design System</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <ul class="informations">
+            <li><a href="#home" id="home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+        <ul class="sign-in">
+            <li><a href="#">Log-in</a></li>
+            <li><a href="#" class="register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Presentation Header -->
+    <header id="about" class="about">
+        <div class="box-container">
+            <!-- Main Heading -->
+            <h1>Welcome to Eternal<span class="teal"> Accademia</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tempora, optio iusto est nihil ratione autem quia excepturi laudantium illum itaque aut dolorum architecto ipsa quisquam sed sequi qui corporis?</p>
+            <h4>By<span class="teal"> Eternal</span></h4>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <!-- Grid Parent -->
+        <div class="grid-container">
+            <!-- Grid Children -->
+            <div class="box a">
+                <h3>First</h3>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </div>
+            <div class="box b">
+                <h3>Second</h3>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </div>
+            <div class="box c">
+                <h3>Third</h3>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </div>
+            <div class="box d">
+                <h3>Fourth</h3>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="form">
+        <div class="form-container">
+            <form action="" method="POST">
+                <!-- Name -->
+                <label for="first-name"><img class="icon-small" src="/resources/assets/icons/user.png" /> First Name:</label>
+                <input id='first-name' name="first-name" type="text" min="1" max="100" placeholder="Enter your First Name" required /> 
+                <!-- Age -->
+                <label for="last-name"><img class="icon-small" src="/resources/assets/icons/user.png" /> Last Name:</label>
+                <input id="last-name" name="last-name" type="text" min="1" max="100" placeholder="Enter your Last Name" required />
+                <!-- Email -->
+                <label for="email"><img class="icon-small" src="/resources/assets/icons/mail.png" /> Email:</label>
+                <input id="email" name="email" type="email" placeholder="example@mail.com" required />
+                <!-- Password -->
+                <label for="password"><img class="icon-small" src="/resources/assets/icons/padlock.png" /> Password:</label>
+                <input id="password" name="password" type="password" min="6" max="12" placeholder="******" required />
+                <!-- Submit -->
+                <button type="submit" class="register">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
