@@ -1,0 +1,110 @@
+/* NAV */
+
+a {
+    transition: 250ms linear;
+}
+
+/* Register Button */
+a:last-child {
+    border: none;
+}
+
+a:hover {
+    border-bottom: 1px solid hsla(179, 63%, 45%, 1);
+    opacity: .9;
+}
+
+.sign-in {
+    animation: moveToLeft 500ms linear 1;
+}
+
+.informations {
+    animation: moveToLeft 500ms linear 1;
+}
+
+@keyframes moveToLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+
+/* HEADER */
+
+.box-container {
+    animation: zoomIn 500ms linear forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.25);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* SERVICES */
+
+.box {
+    animation: appears 500ms ease;
+    transition: 
+        transform 250ms linear,
+        background-color 125ms ease;
+}
+
+.box:hover {
+    transform: scale(1.05)
+}
+
+.box:active {
+    background-color: hsla(191, 52%, 4%, .5);
+}
+
+@keyframes appears {
+    0% {
+        transform: translate(100%, 25%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* FORM */
+
+input:focus-visible {
+    animation: zoomIn 250ms linear both;
+} 
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.025);
+        box-shadow: 1px 1px 2px hsla(191, 52%, 4%, .5);
+    }
+}
+
+form button:hover {
+    animation: onSubmit 250ms linear both;
+}
+
+@keyframes onSubmit {
+    0% {
+        opacity: 1;
+        width: 25%;
+    }
+    100% {
+        width: 30%;
+        opacity: .9;
+    }
+}
+
+
